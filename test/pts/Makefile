@@ -81,8 +81,9 @@ SBC_DECODER_OBJ  = $(SBC_DECODER:.c=.o)
 SBC_ENCODER_OBJ  = $(SBC_ENCODER:.c=.o)
 AVDTP_OBJ  = $(AVDTP:.c=.o)
 
-EXAMPLES = iopt ble_peripheral_test ble_central_test l2cap_test classic_test bnep_test hsp_ag_test hsp_hs_test sco_loopback le_data_channel
-EXAMPLES = avdtp_source_test avdtp_sink_test le_data_channel avrcp_test
+EXAMPLES =   l2cap_test le_data_channel
+# EXAMPLES = iopt ble_peripheral_test ble_central_test l2cap_test classic_test bnep_test hsp_ag_test hsp_hs_test sco_loopback le_data_channel
+# EXAMPLES = avdtp_source_test avdtp_sink_test le_data_channel avrcp_test
 
 all: ${EXAMPLES}
 
